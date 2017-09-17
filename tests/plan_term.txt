@@ -1,0 +1,64 @@
+
+# Text Part
+1. Match starts (not important enough to be tested)
+	1.1 at the beggining of text
+	1.2 in the middle of text
+	1.3 at the end of text (meaning the last char of the match is the last char of text)
+2. The length of the match string
+	2.1 is less than the length of text (make different than 1.*)
+	2.2 is equal to length of text (make different than 1.*)
+	2.3 is greater than length of text
+	2.4 is zero (??)
+3. Number of differences
+	3.1 is 0 (tested above)
+	3.2 is 1
+	3.3 is all the characters
+4. The mismatch is located at
+	4.1 the begginig of the match string
+	4.2 the middle of the match string
+	4.3 the end of the match string
+
+
+
+# Repeat Term
+1. The inner term is
+	1.1 a text term
+	1.2 a repeat term (allowed??)
+	1.3 a multiterm (expand on this with different patterns of matching)
+	1.4 a variable
+	1.5 empty (?)
+2. The length of the match is
+	2.1 less than text (impossible / useless)
+	2.2 equal to text
+		2.2.1 with 1 repeat
+		2.2.2 with multiple repeats (greedy)
+3. The pattern repeats
+	3.1 0 times
+	3.2 1 time
+	3.3 more than once
+
+
+
+# Variable Term
+1. This variable name is
+	1.1 defined
+	1.2 undefined
+2. This variable
+	2.1 matches
+	2.2 does not match
+
+
+
+# Multiterm
+1. The number of options
+	1.1 is 1
+	1.2 is more than one
+2. The matched option is
+	2.1 neither
+	2.2 the first
+	2.3 many options
+	2.4 all options
+3. The matched option's index is (probably tested in 2.3)
+	3.1 the first 
+	3.2 in the middle
+	3.3 in the end

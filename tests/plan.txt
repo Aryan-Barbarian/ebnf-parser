@@ -1,0 +1,5 @@
+Have a few different testing plans:
+
+1. Unit tests on terms (plan_terms.txt)
+2. Unit tests on rules 
+3. Unit tests on parsers (IO, reading match strings)
