@@ -1,9 +1,14 @@
 import unittest
-import ebnf_parser
+from ebnf_parser import *
 
 class TestMultiTerm(unittest.TestCase):
 
     def test_one_option(self):
+        text = "123abc123abcabc"
+        curr_string = "\"abc\" | "
+        option1 = TextTerm("123", "\"123\"")
+        option2 = TextTerm("abc", "\"abc\"")
+
         pass
 
     def test_many_options(self):
