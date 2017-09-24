@@ -1,0 +1,63 @@
+{
+	match_type : "variable"
+	start_index : 0
+	end_index : 10
+	variable_name : "number"
+	full_match : "-12"
+	children : [
+		{
+			match_type : "repeat"
+			num_repeats : 1
+			max_repeats : 1
+			start_index : 0
+			end_index : 1
+			full_match : "-"
+			children : [
+				{
+					match_type : "text"
+					start_index : 0
+					end_index : 1
+					full_match : "-"
+				}
+			]
+		}
+
+		{
+			match_type : "repeat"
+			num_repeats : 2
+			max_repeats : null
+			start_index : 0
+			end_index : 1
+			full_match : "12"
+			children : [
+				{
+					match_type : variable
+					variable_name : digit
+					start_index : 1
+					end_index : 2
+					full_match : "1"
+					children : [{
+						match_type : "text"
+						start_index : 1
+						end_index : 2
+						full_match : "1"
+					}]
+				}
+
+				{
+					match_type : variable
+					variable_name : digit
+					start_index : 1
+					end_index : 2
+					full_match : "1"
+					children : [{
+						match_type : "text"
+						start_index : 1
+						end_index : 2
+						full_match : "1"
+					}]
+				}
+			]
+		}
+	]
+}
