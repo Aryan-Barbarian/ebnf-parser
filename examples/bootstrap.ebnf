@@ -21,7 +21,7 @@ zero_or_more_term = "{" full_term "}"
 group_term = "(" full_term ")"
 base_term = text_term | variable_term | zero_or_one_term | zero_or_more_term | group_term
 
-or_term = term "|" term { "|" term}
+or_term = term {wspace} "|" {wspace} term {{wspace} "|" {wspace} term}
 add_term = full_term " " full_term {" " full_term}
 full_term = term | or_term | add_term | terminal
 
@@ -29,5 +29,4 @@ full_term = term | or_term | add_term | terminal
 lhs = variable_name
 rhs = full_term
 rule = lhs " = " rhs
-
 grammar = {rule}
