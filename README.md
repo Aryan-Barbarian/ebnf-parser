@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/Aryan-Barbarian/ebnf-parser.svg?branch=master)](https://travis-ci.org/Aryan-Barbarian/ebnf-parser)
