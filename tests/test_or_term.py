@@ -1,7 +1,7 @@
 import unittest
 from ebnf_parser import *
 
-class TestMultiTerm(unittest.TestCase):
+class TestOrTerm(unittest.TestCase):
 
     def test_one_option(self):
         text = "123abc123abcabc"

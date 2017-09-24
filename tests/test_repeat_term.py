@@ -9,8 +9,11 @@ class TestRepeatTerm(unittest.TestCase):
     def test_inner_term_repeat(self):
         pass;
 
-    def test_inner_term_multiterm(self):
+    def test_inner_term_or(self):
         # TODO: should be multiple tests with different patterns of matching
+        pass;
+
+    def test_inner_term_and(self):
         pass;
 
     def test_inner_term_variable(self):

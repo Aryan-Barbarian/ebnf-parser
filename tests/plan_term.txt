@@ -49,7 +49,7 @@
 
 
 
-# Multiterm
+# Or Term
 1. The number of options
 	1.1 is 1
 	1.2 is more than one
@@ -62,3 +62,17 @@
 	3.1 the first 
 	3.2 in the middle
 	3.3 in the end
+
+
+
+# And Term
+1. The number of terms
+	1.1 is 0
+	1.2 is 1
+	1.3 is more than one
+2. The mismatched option is
+	2.1 none of them (already tested)
+	2.2 the first
+	2.3 the second
+	2.4 the last last
+	2.5 many of them

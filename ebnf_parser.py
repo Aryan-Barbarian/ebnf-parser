@@ -73,7 +73,7 @@ class TextTerm(BaseTerm):
 		if ans:
 			yield ans
 
-class MultiTerm(BaseTerm):
+class OrTerm(BaseTerm):
 	def __init__(self, rule_string, possibles):
 		super(FullTerm, self).__init__(rule_string)
 		self.possibles = possibles
@@ -82,6 +82,14 @@ class MultiTerm(BaseTerm):
 		for possible in self.possibles:
 			for match in possible.match(text):
 				yield match
+
+class AndTerm(BaseTerm):
+	def __init__(self, rule_string, terms):
+		super(FullTerm, self).__init__(rule_string)
+		self.terms = possibles
+
+	def match(self, text, start_index):
+		pass; # TODO: Implement
 
 class RepeatTerm(BaseTerm):
 	def __init__(self, rule_string, inner_term):
