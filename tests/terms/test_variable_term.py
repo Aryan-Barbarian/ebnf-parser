@@ -4,18 +4,16 @@ import ebnf_parser
 class TestVariableTerm(unittest.TestCase):
 
     def test_variable_defined(self):
-        pass;
+        raise NotImplementedError("Test not implemented");
 
     def test_variable_undefined(self):
-        pass;
+        raise NotImplementedError("Test not implemented");
         
     def test_variable_matches(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_variable_does_not_match(self):
-        pass
-
-
+        raise NotImplementedError("Test not implemented")
 
 if __name__ == '__main__':
     unittest.main()

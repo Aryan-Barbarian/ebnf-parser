@@ -5,7 +5,7 @@ class TestMetaparsing(unittest.TestCase):
 
 
     def test_text_term(self):
-        raw_text = "\"abc\""
+        raise NotImplementedError("Test not implemented")
 
 
 if __name__ == '__main__':

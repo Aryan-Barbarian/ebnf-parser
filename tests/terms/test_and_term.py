@@ -4,28 +4,28 @@ from ebnf_parser import *
 class TestAndTerm(unittest.TestCase):
 
     def test_zero_options(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_one_option(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_many_options(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_mismatched_option_is_none(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_mismatched_option_is_first(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_mismatched_option_is_second(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_mismatched_option_is_last(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_mismatched_option_is_many(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
 
 

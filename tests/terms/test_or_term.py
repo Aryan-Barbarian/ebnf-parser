@@ -8,32 +8,31 @@ class TestOrTerm(unittest.TestCase):
         curr_string = "\"abc\" | "
         option1 = TextTerm("123", "\"123\"")
         option2 = TextTerm("abc", "\"abc\"")
-
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_many_options(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_matched_option_is_none(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_matched_option_is_one(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_matched_option_is_many(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_matched_option_is_all(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_matched_option_is_first(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_matched_option_is_in_middle(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
     def test_matched_option_is_last(self):
-        pass
+        raise NotImplementedError("Test not implemented")
 
 
 

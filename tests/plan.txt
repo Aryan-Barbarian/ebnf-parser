@@ -1,7 +1,10 @@
 Have a few different testing plans:
 
 1. Unit tests on terms (plan_terms.txt)
-2. Unit tests on rules 
-3. Unit tests on parsers (IO, reading match strings)
+2. Unit tests on loading (IO, escape chars) 
+3. Unit tests on metaparsing (reading match strings, creating parsers)
+4. End-to-end tests 
+	4.1 Digits
+	4.2 EBNF itself
 
-Also, many tests won't be implemented because of low risk (e.g. repeat term metaparsing with every different type of term inside the repeat term)
+Many tests won't be implemented because of low risk (e.g. repeat term metaparsing with every different type of term inside the repeat term)

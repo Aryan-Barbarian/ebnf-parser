@@ -30,7 +30,19 @@
 	4.3 Empty (e.g. "")
 	4.4 Nested zero length (e.g. "{{{}}}")
 
-# Multiterm
+# Or Term
+1. Number of Options
+	1.1 Zero options (tested invalid)
+	1.2 1
+	1.3 multiple
+2. Whitespace
+	2.1 beginning
+	2.2 between options
+	2.3 end
+3. Option types (low priority)
+
+
+# And Term
 1. Number of Options
 	1.1 Zero options (tested invalid)
 	1.2 1
