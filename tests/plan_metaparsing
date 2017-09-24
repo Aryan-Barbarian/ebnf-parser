@@ -1,0 +1,49 @@
+
+
+# Text Term
+1. normal chars
+2. whitespace
+	2.1 beginning
+	2.2 middle (\n)
+	2.3 end
+3. special chars
+	3.1 single quotes
+4. invalids
+	4.1 quotes
+	4.2 empty
+	4.3 zero length
+
+# Repeat Term
+1. Repeat type
+	1.1 [0,1]
+	1.2 [0,inf)
+2. Whitespace
+	2.1 beginning
+	2.2 middle (\n)
+	2.3 end
+3. Inner term (low priority)
+4. Invalids
+	4.1 Unbalanced brackets
+		4.1.1 left open
+		4.1.2 extra closer
+	4.2 Balanced brackets, but wrong order/type
+	4.3 Empty (e.g. "")
+	4.4 Nested zero length (e.g. "{{{}}}")
+
+# Multiterm
+1. Number of Options
+	1.1 Zero options (tested invalid)
+	1.2 1
+	1.3 multiple
+2. Whitespace
+	2.1 beginning
+	2.2 between options
+	2.3 end
+3. Option types (low priority)
+
+
+# Variable term
+1. Happy case
+2. invalids
+	2.1 illegal special char (none of these?)
+	

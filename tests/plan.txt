@@ -3,3 +3,5 @@ Have a few different testing plans:
 1. Unit tests on terms (plan_terms.txt)
 2. Unit tests on rules 
 3. Unit tests on parsers (IO, reading match strings)
+
+Also, many tests won't be implemented because of low risk (e.g. repeat term metaparsing with every different type of term inside the repeat term)
