@@ -1,5 +1,5 @@
 import unittest
-from ebnf_parser import *
+from parsing.ebnf_parser import *
 
 class TestOrTerm(unittest.TestCase):
 

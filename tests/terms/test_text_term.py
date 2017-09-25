@@ -1,5 +1,5 @@
 import unittest
-import ebnf_parser
+from parsing.ebnf_parser import *
 
 class TestTextTerm(unittest.TestCase):
 
@@ -7,14 +7,14 @@ class TestTextTerm(unittest.TestCase):
     def test_match_starts_at_start_of_text(self):
         text = "howdy123"
         match_string = "howdy"
-        expected_match = ebnf_parser.TextMatch(0, 5)
+        expected_match = TextMatch(0, 5)
         self.run_match_test(text, match_string, 0, expected_match)
 
     def test_match_starts_at_middle_of_text(self):
         text = "ahowdy123"
         match_string = "howdy"
         start_index = 1
-        expected_match = ebnf_parser.TextMatch(1, 6)
+        expected_match = TextMatch(1, 6)
         self.run_match_test(text, match_string, start_index, expected_match)
 
     def test_match_starts_at_middle_of_fails(self):
@@ -28,19 +28,19 @@ class TestTextTerm(unittest.TestCase):
         text = "aahowdy"
         match_string = "howdy"
         start_index = 2
-        expected_match = ebnf_parser.TextMatch(2, 7)
+        expected_match = TextMatch(2, 7)
         self.run_match_test(text, match_string, start_index, expected_match)
 
     def test_length_match_string_less_than_text(self):
         text = "howdy123"
         match_string = "howdy"
-        expected_match = ebnf_parser.TextMatch(0, 5)
+        expected_match = TextMatch(0, 5)
         self.run_match_test(text, match_string, 0, expected_match)
 
     def test_length_match_string_equal_text(self):
         text = "howdy"
         match_string = "howdy"
-        expected_match = ebnf_parser.TextMatch(0, 5)
+        expected_match = TextMatch(0, 5)
         self.run_match_test(text, match_string, 0, expected_match)
 
     def test_length_match_string_greater_than_text(self):
@@ -82,7 +82,7 @@ class TestTextTerm(unittest.TestCase):
 
     def run_match_test(self, text, match_string, start_index, expected_match):
         rule_string = "\"{}\"".format(match_string)
-        text_term = ebnf_parser.TextTerm(rule_string, match_string)
+        text_term = TextTerm(rule_string, match_string)
         actual_match = text_term.match_first(text, start_index)
         self.assertEqual(actual_match, expected_match)
 

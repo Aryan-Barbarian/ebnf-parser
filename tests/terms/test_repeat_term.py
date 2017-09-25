@@ -1,5 +1,5 @@
 import unittest
-import ebnf_parser
+from parsing.ebnf_parser import *
 
 class TestRepeatTerm(unittest.TestCase):
 

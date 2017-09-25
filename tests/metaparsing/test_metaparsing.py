@@ -1,8 +1,7 @@
 import unittest
-import ebnf_parser
+import parsing.ebnf_parser
 
 class TestMetaparsing(unittest.TestCase):
-
 
     def test_text_term(self):
         raise NotImplementedError("Test not implemented")
